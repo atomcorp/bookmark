@@ -1,0 +1,98 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+$col:120px;
+$title-color:#F6E4BA;
+
+//Images for stop and carry on
+$img-height:40px;
+
+html {
+	height:100%;
+}
+
+p {
+	margin:0;
+}
+
+body {
+	height:100%;
+	max-width:960px;
+	margin:0 auto;
+	.container {
+		text-align:center;
+		height:100%;
+		.title {
+			position:absolute;
+			h1 {
+				font-family:'Prata',serif;
+				font-size: 2em;
+				letter-spacing: 0.2em;
+				text-align:left;
+				color:$title-color;
+			} 
+			svg {
+				height:48px;
+				width:48px;
+				float:right;
+			}
+			#bookmark-icon {
+				fill:$title-color;
+			}
+		} 
+		.main-content {
+			vertical-align:middle;
+			display: table;
+			max-width: $col*8;
+			line-height:1.5em;
+			font-size:1.5em;
+			text-align:left;
+			height:100%;
+			font-family:'Crimson Text',serif;
+			.book-details {
+				width:$col;
+				display: table-cell;
+				vertical-align: middle;
+				text-align:center;
+				.side-wrapper {
+					padding:10px;
+				}
+				p {
+					padding:0 10px;
+					font-size:0.6em;
+					line-height:1em;
+				}
+				svg {
+					height:$img-height;
+					width:$col;					
+				}	
+				#book-12-icon {
+					fill: #D37395;
+				}
+			}
+			.introduction {
+			width:$col*6;
+			margin-left:$col*1;
+			display: table-cell;
+			vertical-align: middle;
+			}
+			.next-book {
+				@extend .book-details;
+				#note-13-icon {
+					fill: #CAD7C5;
+				}		
+			}
+		} // END main content
+		.details {
+			position:absolute;
+			div {
+				background-color: rgba(153, 255, 153,0.6);
+				}
+
+		}
+	} // end container  	
+}
