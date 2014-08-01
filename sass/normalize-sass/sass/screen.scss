@@ -19,80 +19,78 @@ p {
 	margin:0;
 }
 
+p:first-letter {
+	color:blue;
+}
+
 body {
-	height:100%;
+	background-image:url('/testbed/bookstarts/images/paper_fibers.png');
 	max-width:960px;
 	margin:0 auto;
 	.container {
-		text-align:center;
 		height:100%;
 		.title {
-			position:absolute;
 			h1 {
 				font-family:'Prata',serif;
 				font-size: 2em;
 				letter-spacing: 0.2em;
 				text-align:left;
 				color:$title-color;
+				float:left;
+				margin:30px 0 20px 0;
 			} 
 			svg {
 				height:48px;
 				width:48px;
-				float:right;
+				float:left;
 			}
 			#bookmark-icon {
 				fill:$title-color;
 			}
-		} 
+		} .title:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			} 
 		.main-content {
-			vertical-align:middle;
-			display: table;
 			max-width: $col*8;
 			line-height:1.5em;
 			font-size:1.5em;
 			text-align:left;
-			height:100%;
 			font-family:'Crimson Text',serif;
+			border-top:1px dashed lightgrey;
+			border-bottom:1px dashed lightgrey;
+			padding:10px 0;
+				.introduction {
+				width:$col*6;
+				margin-left:$col*2;
+					p:first-child:first-letter {
+						color:#8A2BE2;
+					}
+				} // end intorduction
+		} // END main content
+		.options {
 			.book-details {
 				width:$col;
-				display: table-cell;
-				vertical-align: middle;
-				text-align:center;
-				.side-wrapper {
-					padding:10px;
-				}
-				p {
-					padding:0 10px;
-					font-size:0.6em;
-					line-height:1em;
-				}
+				display:inline-block;
+				margin-left:$col*3;
+				margin-top:20px;
 				svg {
-					height:$img-height;
-					width:$col;					
-				}	
+			 		height:$img-height;
+			 		width:$col;					
+				}
 				#book-12-icon {
 					fill: #D37395;
 				}
-			}
-			.introduction {
-			width:$col*6;
-			margin-left:$col*1;
-			display: table-cell;
-			vertical-align: middle;
-			}
+			}	
 			.next-book {
-				@extend .book-details;
-				#note-13-icon {
-					fill: #CAD7C5;
-				}		
-			}
-		} // END main content
-		.details {
-			position:absolute;
-			div {
-				background-color: rgba(153, 255, 153,0.6);
-				}
+			 	@extend .book-details;
+			 	margin-left:$col*2;
+			 	#note-13-icon {
+			 		fill: #CAD7C5;
+			 	}		
 
+		}
 		}
 	} // end container  	
 }

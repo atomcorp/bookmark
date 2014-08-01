@@ -14,91 +14,87 @@ p {
 }
 
 /* line 22, ../sass/screen.scss */
+p:first-letter {
+  color: blue;
+}
+
+/* line 26, ../sass/screen.scss */
 body {
-  height: 100%;
+  background-image: url("/testbed/bookstarts/images/paper_fibers.png");
   max-width: 960px;
   margin: 0 auto;
 }
-/* line 26, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 body .container {
-  text-align: center;
   height: 100%;
 }
-/* line 29, ../sass/screen.scss */
-body .container .title {
-  position: absolute;
-}
-/* line 31, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 body .container .title h1 {
   font-family: 'Prata',serif;
   font-size: 2em;
   letter-spacing: 0.2em;
   text-align: left;
   color: #f6e4ba;
+  float: left;
+  margin: 30px 0 20px 0;
 }
-/* line 38, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 body .container .title svg {
   height: 48px;
   width: 48px;
-  float: right;
+  float: left;
 }
-/* line 43, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 body .container .title #bookmark-icon {
   fill: #f6e4ba;
 }
-/* line 47, ../sass/screen.scss */
-body .container .main-content {
-  vertical-align: middle;
+/* line 50, ../sass/screen.scss */
+body .container .title:after {
+  content: "";
   display: table;
+  clear: both;
+}
+/* line 55, ../sass/screen.scss */
+body .container .main-content {
   max-width: 960px;
   line-height: 1.5em;
   font-size: 1.5em;
   text-align: left;
-  height: 100%;
   font-family: 'Crimson Text',serif;
-}
-/* line 56, ../sass/screen.scss */
-body .container .main-content .book-details, body .container .main-content .next-book {
-  width: 120px;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-/* line 61, ../sass/screen.scss */
-body .container .main-content .book-details .side-wrapper, body .container .main-content .next-book .side-wrapper {
-  padding: 10px;
+  border-top: 1px dashed lightgrey;
+  border-bottom: 1px dashed lightgrey;
+  padding: 10px 0;
 }
 /* line 64, ../sass/screen.scss */
-body .container .main-content .book-details p, body .container .main-content .next-book p {
-  padding: 0 10px;
-  font-size: 0.6em;
-  line-height: 1em;
+body .container .main-content .introduction {
+  width: 720px;
+  margin-left: 240px;
 }
-/* line 69, ../sass/screen.scss */
-body .container .main-content .book-details svg, body .container .main-content .next-book svg {
+/* line 67, ../sass/screen.scss */
+body .container .main-content .introduction p:first-child:first-letter {
+  color: #8A2BE2;
+}
+/* line 73, ../sass/screen.scss */
+body .container .options .book-details, body .container .options .next-book {
+  width: 120px;
+  display: inline-block;
+  margin-left: 360px;
+  margin-top: 20px;
+}
+/* line 78, ../sass/screen.scss */
+body .container .options .book-details svg, body .container .options .next-book svg {
   height: 40px;
   width: 120px;
 }
-/* line 73, ../sass/screen.scss */
-body .container .main-content .book-details #book-12-icon, body .container .main-content .next-book #book-12-icon {
+/* line 82, ../sass/screen.scss */
+body .container .options .book-details #book-12-icon, body .container .options .next-book #book-12-icon {
   fill: #D37395;
 }
-/* line 77, ../sass/screen.scss */
-body .container .main-content .introduction {
-  width: 720px;
-  margin-left: 120px;
-  display: table-cell;
-  vertical-align: middle;
+/* line 86, ../sass/screen.scss */
+body .container .options .next-book {
+  margin-left: 240px;
 }
-/* line 85, ../sass/screen.scss */
-body .container .main-content .next-book #note-13-icon {
+/* line 89, ../sass/screen.scss */
+body .container .options .next-book #note-13-icon {
   fill: #CAD7C5;
-}
-/* line 90, ../sass/screen.scss */
-body .container .details {
-  position: absolute;
-}
-/* line 92, ../sass/screen.scss */
-body .container .details div {
-  background-color: rgba(153, 255, 153, 0.6);
 }
