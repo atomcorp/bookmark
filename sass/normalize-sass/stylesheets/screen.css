@@ -3,32 +3,27 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
-/* line 14, ../sass/screen.scss */
+/* line 16, ../sass/screen.scss */
 html {
   height: 100%;
 }
 
-/* line 18, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 p {
   margin: 0;
 }
 
-/* line 22, ../sass/screen.scss */
-p:first-letter {
-  color: blue;
-}
-
-/* line 26, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 body {
   background-image: url("/testbed/bookstarts/images/paper_fibers.png");
   max-width: 960px;
   margin: 0 auto;
 }
-/* line 30, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 body .container {
   height: 100%;
 }
-/* line 33, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 body .container .title h1 {
   font-family: 'Prata',serif;
   font-size: 2em;
@@ -38,63 +33,77 @@ body .container .title h1 {
   float: left;
   margin: 30px 0 20px 0;
 }
-/* line 42, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 body .container .title svg {
   height: 48px;
   width: 48px;
   float: left;
 }
-/* line 47, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 body .container .title #bookmark-icon {
   fill: #f6e4ba;
 }
-/* line 50, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
+body .container .title .tagline {
+  color: gray;
+  line-height: 6em;
+  margin: 30px 0 0 30px;
+  font-family: 'Metamorphous';
+}
+/* line 56, ../sass/screen.scss */
 body .container .title:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 55, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 body .container .main-content {
   max-width: 960px;
   line-height: 1.5em;
-  font-size: 1.5em;
+  font-size: 1.7em;
   text-align: left;
   font-family: 'Crimson Text',serif;
   border-top: 1px dashed lightgrey;
   border-bottom: 1px dashed lightgrey;
   padding: 10px 0;
 }
-/* line 64, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 body .container .main-content .introduction {
-  width: 720px;
-  margin-left: 240px;
-}
-/* line 67, ../sass/screen.scss */
-body .container .main-content .introduction p:first-child:first-letter {
-  color: #8A2BE2;
+  width: 840px;
+  margin-left: 120px;
 }
 /* line 73, ../sass/screen.scss */
+body .container .main-content .introduction p:first-letter {
+  font-size: 3em;
+  padding: 10px;
+  float: left;
+  font-family: 'Metamorphous';
+}
+/* line 80, ../sass/screen.scss */
+body .container .main-content .introduction p {
+  color: #3C3B39;
+}
+/* line 86, ../sass/screen.scss */
 body .container .options .book-details, body .container .options .next-book {
   width: 120px;
   display: inline-block;
-  margin-left: 360px;
+  margin-left: 480px;
   margin-top: 20px;
 }
-/* line 78, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 body .container .options .book-details svg, body .container .options .next-book svg {
   height: 40px;
   width: 120px;
 }
-/* line 82, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 body .container .options .book-details #book-12-icon, body .container .options .next-book #book-12-icon {
   fill: #D37395;
 }
-/* line 86, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 body .container .options .next-book {
   margin-left: 240px;
 }
-/* line 89, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 body .container .options .next-book #note-13-icon {
   fill: #CAD7C5;
 }

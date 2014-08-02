@@ -11,6 +11,8 @@ $title-color:#F6E4BA;
 //Images for stop and carry on
 $img-height:40px;
 
+$font-size:1em;
+
 html {
 	height:100%;
 }
@@ -19,12 +21,9 @@ p {
 	margin:0;
 }
 
-p:first-letter {
-	color:blue;
-}
 
 body {
-	background-image:url('/testbed/bookstarts/images/paper_fibers.png');
+	background-image:url('/testbed/bookstarts/images/paper_fibers.png'); // http://subtlepatterns.com/paper-fibers/
 	max-width:960px;
 	margin:0 auto;
 	.container {
@@ -47,7 +46,14 @@ body {
 			#bookmark-icon {
 				fill:$title-color;
 			}
-		} .title:after {
+			.tagline {
+				color:gray;
+				line-height:6em;
+				margin:30px 0 0 30px;
+				font-family:'Metamorphous';
+			}
+		} // end title
+		.title:after {
 			  content: "";
 			  display: table;
 			  clear: both;
@@ -55,17 +61,24 @@ body {
 		.main-content {
 			max-width: $col*8;
 			line-height:1.5em;
-			font-size:1.5em;
+			font-size:$font-size*1.7;
 			text-align:left;
 			font-family:'Crimson Text',serif;
 			border-top:1px dashed lightgrey;
 			border-bottom:1px dashed lightgrey;
 			padding:10px 0;
 				.introduction {
-				width:$col*6;
-				margin-left:$col*2;
-					p:first-child:first-letter {
-						color:#8A2BE2;
+				width:$col*7;
+				margin-left:$col;
+					p:first-letter {
+						// color:#CAD7C5;
+						font-size:$font-size*3;
+						padding:10px;
+						float:left;
+						font-family:'Metamorphous';
+					}
+					p {
+						color:#3C3B39;
 					}
 				} // end intorduction
 		} // END main content
@@ -73,7 +86,7 @@ body {
 			.book-details {
 				width:$col;
 				display:inline-block;
-				margin-left:$col*3;
+				margin-left:$col*4;
 				margin-top:20px;
 				svg {
 			 		height:$img-height;
