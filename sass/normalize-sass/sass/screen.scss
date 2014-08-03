@@ -48,9 +48,9 @@ body {
 			}
 			.tagline {
 				color:gray;
-				line-height:6em;
-				margin:30px 0 0 30px;
+				margin:0 0 30px 0;
 				font-family:'Metamorphous';
+				clear:both;
 			}
 		} // end title
 		.title:after {
@@ -60,8 +60,6 @@ body {
 			} 
 		.main-content {
 			max-width: $col*8;
-			line-height:1.5em;
-			font-size:$font-size*1.7;
 			text-align:left;
 			font-family:'Crimson Text',serif;
 			border-top:1px dashed lightgrey;
@@ -79,15 +77,26 @@ body {
 					}
 					p {
 						color:#3C3B39;
+						line-height:1.5em;
+						font-size:$font-size*1.7;
 					}
 				} // end intorduction
 		} // END main content
 		.options {
 			.book-details {
-				width:$col;
+				width:$col*3;
 				display:inline-block;
-				margin-left:$col*4;
-				margin-top:20px;
+				margin:20px 0 20px $col;
+				text-align:center;
+				color:grey;
+				border:1px dashed lightgrey;
+				box-sizing:border-box;
+				.headline {
+					font-size:2em;
+				}
+				p {
+				}
+
 				svg {
 			 		height:$img-height;
 			 		width:$col;					
@@ -98,12 +107,16 @@ body {
 			}	
 			.next-book {
 			 	@extend .book-details;
-			 	margin-left:$col*2;
 			 	#note-13-icon {
 			 		fill: #CAD7C5;
 			 	}		
 
-		}
+			}
+		} // end options
+		footer {
+			width:100%;
+			text-align:center;
+			margin:30px 0;
 		}
 	} // end container  	
 }
