@@ -8,47 +8,48 @@ html {
   height: 100%;
 }
 
-/* line 20, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
 p {
   margin: 0;
 }
 
-/* line 25, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 body {
   background-image: url("/testbed/bookstarts/images/paper_fibers.png");
   max-width: 960px;
   margin: 0 auto;
 }
-/* line 29, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 body .container {
   height: 100%;
 }
-/* line 32, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 body .container .title h1 {
   font-family: 'Prata',serif;
   font-size: 2em;
   letter-spacing: 0.2em;
   text-align: left;
-  color: #f6e4ba;
+  color: #f7b86d;
   float: left;
-  margin: 30px 0 20px 0;
+  margin: 30px 0 0px 0;
 }
-/* line 41, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 body .container .title svg {
   height: 48px;
   width: 48px;
   float: left;
 }
-/* line 46, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 body .container .title #bookmark-icon {
-  fill: #f6e4ba;
+  fill: #f7b86d;
 }
-/* line 49, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 body .container .title .tagline {
-  color: gray;
+  color: #3C3B39;
   margin: 0 0 30px 0;
-  font-family: 'Metamorphous';
+  font-family: 'Crimson Text';
   clear: both;
+  font-size: 1.3em;
 }
 /* line 56, ../sass/screen.scss */
 body .container .title:after {
@@ -82,35 +83,57 @@ body .container .main-content .introduction p {
   color: #3C3B39;
   line-height: 1.5em;
   font-size: 1.7em;
+  padding-bottom: 10px;
 }
-/* line 86, ../sass/screen.scss */
-body .container .options .book-details, body .container .options .next-book {
+/* line 87, ../sass/screen.scss */
+body .container .options .book-button, body .container .options .next-button, body .container .options .book-details, body .container .options .next-details {
   width: 360px;
   display: inline-block;
-  margin: 20px 0 20px 120px;
+  margin: 20px 0 10px 120px;
   text-align: center;
   color: grey;
-  border: 1px dashed lightgrey;
   box-sizing: border-box;
 }
 /* line 94, ../sass/screen.scss */
-body .container .options .book-details .headline, body .container .options .next-book .headline {
-  font-size: 2em;
+body .container .options .book-button .headline, body .container .options .next-button .headline, body .container .options .book-details .headline, body .container .options .next-details .headline {
+  font-size: 1.4em;
+  margin: 20px 60px 0 60px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  line-height: 2.8em;
+  cursor: pointer;
+  color: #3c3b39;
 }
-/* line 100, ../sass/screen.scss */
-body .container .options .book-details svg, body .container .options .next-book svg {
+/* line 102, ../sass/screen.scss */
+body .container .options .book-button .headline a, body .container .options .next-button .headline a, body .container .options .book-details .headline a, body .container .options .next-details .headline a {
+  text-decoration: none;
+  color: #3c3b39;
+}
+/* line 106, ../sass/screen.scss */
+body .container .options .book-button .headline:hover, body .container .options .next-button .headline:hover, body .container .options .book-details .headline:hover, body .container .options .next-details .headline:hover {
+  text-decoration: underline;
+}
+/* line 109, ../sass/screen.scss */
+body .container .options .book-button .headline svg, body .container .options .next-button .headline svg, body .container .options .book-details .headline svg, body .container .options .next-details .headline svg {
+  fill: grey;
+  height: 26px;
+  margin-left: 0.3em;
+  margin-top: 0.3em;
+  position: absolute;
+  width: 26px;
+}
+/* line 118, ../sass/screen.scss */
+body .container .options .book-button svg, body .container .options .next-button svg, body .container .options .book-details svg, body .container .options .next-details svg {
   height: 40px;
   width: 120px;
 }
-/* line 104, ../sass/screen.scss */
-body .container .options .book-details #book-12-icon, body .container .options .next-book #book-12-icon {
-  fill: #D37395;
+/* line 129, ../sass/screen.scss */
+body .container .options .book-details, body .container .options .next-details {
+  color: grey;
+  border: none;
+  margin-top: 0;
 }
-/* line 110, ../sass/screen.scss */
-body .container .options .next-book #note-13-icon {
-  fill: #CAD7C5;
-}
-/* line 116, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 body .container footer {
   width: 100%;
   text-align: center;
